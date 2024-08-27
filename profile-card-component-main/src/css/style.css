@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 body {
-    background-color: var(--background-color);
-    height: 100vh;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 18px;
+     background-color: var(--background-color);
+     height: 100vh;
+     font-family: 'Kumbh Sans', sans-serif;
+     font-size: 18px;
 }
 
 hr {
@@ -23,29 +23,20 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
     gap: 25px;
-    width: 300px;
-    height: 350px;
+    background-color: #fff;
+    border-radius: 10px;
     margin: 20px;
-    border-radius: 15px;
+    width: 330px;
+    height: 330px;
 }
 
-.card .informacao {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-    height: 100%;
-}
-
-.card .informacao img {
+.card .profile-informations img {
     border-radius: 50%;
     margin-top: 20px;
 }
 
-.card .perfil-numeros {
+.card .profile-numbers {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -54,12 +45,13 @@ hr {
     text-align: center;
 }
 
-.perfil-numeros .info .cidade .card .informacao p {
+.profile-numbers .info .counter,
+.card .profile-informations p {
     font-weight: 700;
 }
 
-.card .informacao .idade,
-.card .informacao .cidade,
-.perfil-numeros .info .tipo {
+.card .profile-informations .age,
+.card .profile-informations .city,
+.profile-numbers .info .counter-type {
     color: var(--text-color);
 }
